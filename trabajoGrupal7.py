@@ -18,12 +18,15 @@
 # contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
 # transacciones: idTransacción: fecha, productos, costo total. 
 # producto: sku: nombre, costo unitario.
+from datetime import datetime
 
 proveedores = {}
 productos = {}
 contactosTrabajadores = {}
 
 #input de Proveedores (Constanza Hurtado): 
+#Aca edita Emanuel
+
 
 #Se definen las variables a ingresar en el diccionario Proveedores: 
 
