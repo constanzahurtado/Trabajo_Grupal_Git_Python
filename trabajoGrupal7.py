@@ -12,34 +12,33 @@
 # Utilizando Git-Hub, indague una forma de guardar toda la información en una sola variable. ¿Cuál
 # consideran que es la más eficiente para hacer esto?
 
-proveedores = {}
+# proveedores = {}
 
-rutProveedor = input("Ingrese rut proveedor: ")
-nombreProveedores = input("Nombre del proveedor: ")
-telefonoProveedores = input("Contacto proveedor: ")
-emailProveedores = input("Correo proveedor: ")
-direccionProveedores = input("Direccion proveedor: ")
+# rutProveedor = input("Ingrese rut proveedor: ")
+# nombreProveedores = input("Nombre del proveedor: ")
+# telefonoProveedores = input("Contacto proveedor: ")
+# emailProveedores = input("Correo proveedor: ")
+# direccionProveedores = input("Direccion proveedor: ")
 
-proveedores[rutProveedor] = [nombreProveedores, telefonoProveedores, emailProveedores, direccionProveedores]
+# proveedores[rutProveedor] = [nombreProveedores, telefonoProveedores, emailProveedores, direccionProveedores]
 
-for clave, valor in proveedores:
-    print(clave, ':',valor)
+# for clave, valor in proveedores:
+#     print(clave, ':',valor)
 
 #Aca edita Emanuel
 from datetime import datetime
 
 transacciones = {}
 
-idTransacción = input('Ingrece el id de transaccion')
+idTransacción = input('Ingrece el id de transaccion: ')
 fecha =  datetime.now()
-productos = input('Ingrece producto')
-costo_total = int(input('Ingre el valor del producto'))
+productos = input('Ingrece producto: ')
+costo_total = int(input('Ingre el valor del producto: '))
 
 transacciones[idTransacción] = [fecha, productos, costo_total]
 
-for clave, valor in transacciones:
+for clave, valor in transacciones.items():
     print(clave, ':',valor)
-
 
 # proveedores: rut: nombre, telefono, email, dirección
 # contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
