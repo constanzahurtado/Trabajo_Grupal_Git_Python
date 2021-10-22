@@ -25,6 +25,21 @@ proveedores[rutProveedor] = [nombreProveedores, telefonoProveedores, emailProvee
 for clave, valor in proveedores:
     print(clave, ':',valor)
 
+#Aca edita Emanuel
+from datetime import datetime
+
+transacciones = {}
+
+idTransacción = input('Ingrece el id de transaccion')
+fecha =  datetime.now()
+productos = input('Ingrece producto')
+costo_total = int(input('Ingre el valor del producto'))
+
+transacciones[idTransacción] = [fecha, productos, costo_total]
+
+for clave, valor in transacciones:
+    print(clave, ':',valor)
+
 
 # proveedores: rut: nombre, telefono, email, dirección
 # contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
