@@ -18,6 +18,7 @@
 # producto: sku: nombre, costo unitario.
 
 proveedores = {}
+productos = {}
 
 rutProveedor = input("Ingrese rut proveedor: ")
 nombreProveedores = input("Nombre del proveedor: ")
