@@ -12,6 +12,11 @@
 # Utilizando Git-Hub, indague una forma de guardar toda la información en una sola variable. ¿Cuál
 # consideran que es la más eficiente para hacer esto?
 
+# proveedores: rut: nombre, telefono, email, dirección
+# contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
+# transacciones: idTransacción: fecha, productos, costo total. 
+# producto: sku: nombre, costo unitario.
+
 proveedores = {}
 
 rutProveedor = input("Ingrese rut proveedor: ")
@@ -24,11 +29,6 @@ proveedores[rutProveedor] = [nombreProveedores, telefonoProveedores, emailProvee
 
 for clave, valor in proveedores:
     print(clave, ':',valor)
-
-# proveedores: rut: nombre, telefono, email, dirección
-# contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
-# transacciones: idTransacción: fecha, productos, costo total. 
-# producto: sku: nombre, costo unitario.
 
 for i in range(5):
     sku = input("Ingrese el SKU del producto: ")
