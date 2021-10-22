@@ -37,6 +37,7 @@ for ingreso in range(0, numero_contacto):
 print(contactosTrabajadores)
 
 
+
 # proveedores: rut: nombre, telefono, email, dirección
 # contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
 # transacciones: idTransacción: fecha, productos, costo total.
