@@ -12,6 +12,8 @@
 # Utilizando Git-Hub, indague una forma de guardar toda la información en una sola variable. ¿Cuál
 # consideran que es la más eficiente para hacer esto?
 
+#Creamos 4 diccionarios con los siguientes datos: 
+
 # proveedores: rut: nombre, telefono, email, dirección
 # contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
 # transacciones: idTransacción: fecha, productos, costo total. 
@@ -19,6 +21,11 @@
 
 proveedores = {}
 productos = {}
+contactosTrabajadores = {}
+
+#input de Proveedores (Constanza Hurtado): 
+
+#Se definen las variables a ingresar en el diccionario Proveedores: 
 
 rutProveedor = input("Ingrese rut proveedor: ")
 nombreProveedores = input("Nombre del proveedor: ")
@@ -26,10 +33,17 @@ telefonoProveedores = input("Contacto proveedor: ")
 emailProveedores = input("Correo proveedor: ")
 direccionProveedores = input("Direccion proveedor: ")
 
+#Se genera un diccionario con las variables declaradas anteriormente
 proveedores[rutProveedor] = [nombreProveedores, telefonoProveedores, emailProveedores, direccionProveedores]
 
+#Con un ciclo for se imprime los valores ingresados
 for clave, valor in proveedores:
     print(clave, ':',valor)
+
+
+#input de productos (Pablo Morales):
+
+#Se cera un cilo for que permite el ingreso de 5 productos. 
 
 for i in range(5):
     sku = input("Ingrese el SKU del producto: ")
@@ -42,9 +56,13 @@ for i in range(5):
 
 print(productos)
 
+#input de contactosTrabajadores (Alejandro Venegas):
+
+# Se define una variable que indica el número de contactos a ingresar. 
+
 numero_contacto = int(input("cuantos contacto de trabajadores desea ingresar : "))
 
-contactosTrabajadores = {}
+#Luego, en base al número de contactos, se genera un ciclo for con las variables input y un output con estos datos. 
 
 for ingreso in range(0, numero_contacto):
     rut= int(input("ingrese rut del contacto trabajador: "))
@@ -60,12 +78,7 @@ print(contactosTrabajadores)
 
 
 
-# proveedores: rut: nombre, telefono, email, dirección
-# contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
-# transacciones: idTransacción: fecha, productos, costo total.
-# producto: sku: nombre, costo unitario.
 
-producto = {'0001': ['Naranja', 500], '0002': ['Manzana', 300], '0003': ['Kiwi', 1000], '0004': ['Platano', 250], '0005': ['Sandia', 3000]}
 
 
 
