@@ -14,11 +14,17 @@
 
 proveedores = {}
 
-contactosTrabajadores = {}
+rutProveedor = input("Ingrese rut proveedor: ")
+nombreProveedores = input("Nombre del proveedor: ")
+telefonoProveedores = input("Contacto proveedor: ")
+emailProveedores = input("Correo proveedor: ")
+direccionProveedores = input("Direccion proveedor: ")
 
-transacciones = {}
+proveedores[rutProveedor] = [nombreProveedores, telefonoProveedores, emailProveedores, direccionProveedores]
 
-productos = {}
+for clave, valor in proveedores:
+    print(clave, ':',valor)
+
 
 # proveedores: rut: nombre, telefono, email, dirección
 # contactosTrabajadores: rut: nombre, apellido, empresa proveedora, cargo, telefono, email, dirección
