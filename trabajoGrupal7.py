@@ -25,6 +25,18 @@ productos = {}
 # transacciones: idTransacción: fecha, productos, costo total. 
 # producto: sku: nombre, costo unitario.
 
+for i in range(5):
+    sku = input("Ingrese el SKU del producto: ")
+    print("----------------------------")
+    nombre = input("Ingrese el nombre del producto: ")
+    print("----------------------------")
+    costo = int(input("Ingrese el valor del producto: "))
+    print("----------------------------")
+    productos[sku] = [nombre, costo]
+
+print(productos)
+
+producto = {'0001': ['Naranja', 500], '0002': ['Manzana', 300], '0003': ['Kiwi', 1000], '0004': ['Platano', 250], '0005': ['Sandia', 3000]}
 
 
 
