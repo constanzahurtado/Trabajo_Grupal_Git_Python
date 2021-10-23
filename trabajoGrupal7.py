@@ -23,10 +23,19 @@ from datetime import datetime
 proveedores = {}
 productos = {}
 contactosTrabajadores = {}
-
+transacciones = {}
 #input de Proveedores (Constanza Hurtado): 
 #Aca edita Emanuel
 
+idTransacción = input('Ingrece el id de transaccion: ')
+fecha =  datetime.now()
+productos = input('Ingrece producto: ')
+costo_total = int(input('Ingre el valor del producto: '))
+
+transacciones[idTransacción] = [fecha, productos, costo_total]
+
+for clave, valor in transacciones.items():
+    print(clave, ':',valor)
 
 #Se definen las variables a ingresar en el diccionario Proveedores: 
 
